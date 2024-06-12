@@ -6,23 +6,10 @@ Repository for the DAAD Study Visits by Groups of Foreign Students 2024 - German
 - [Cristian E. Bello](https://www.linkedin.com/in/cristian-eliecer-bello-reyes-46b1b91ba/)
 - [Alcides Montoya](https://www.linkedin.com/in/alcides-montoya-cañola-b610ba7/)
 
-
-## Structure
-The repository is structured as follows:
-- `Getting_started/`: Contains introductory notebooks on how to use CUDA-Q.
-- `Other/`: Contains additional files and information.
-- `results/`: Contains the QAOA results in a CSV format.
-- `src/`: Contains the source code for the project.
-- `Slides_Problem.pptx`: Contains the final presentation for the project.
-- `HandsOn_DQC.ipynb`: Contains the final submission for the project as a Jupyter Notebook.
-
-
 ## Problem Overview
-The given instructions can be found in the following [pdf file](Other/ETH_QEC_HACKATHON_NVIDIA_CHALLENGE_v1.pdf). We will introduce the main points here.
-
 The Vehicle Routing Problem (VRP) is an NP-Hard combinatorial optimization problem that involves finding the best routes for a fleet of vehicles to deliver to customers.
 
-![VRP example](Other/VRP.jpeg) 
+![VRP example](VRP.jpeg) 
 
 In the most straightforward setting, the goal is to minimize the total distance traveled by the cars. In some sense, the VRP is a generalization of the Traveling Salesman Problem (TSP). Interestingly, the VRP is a general problem that finds applications in many critical fields, such as supply chain management, health care, and the chip design industry. Consequently, finding efficient solutions to the VRP is of significant importance.
 
