@@ -25,7 +25,7 @@ The proposed challenge was translating the VRP to an instance of the Max-Cut pro
 
 As we need `n*(n-1)+1` qubits for this translation, the number of qubits needed to implement the VRP grows quadratically with the number of customers, and to solve relevant instances of the VRP, a large number of qubits is required. As the computational space grows exponentially with the number of qubits, the simulation of QAOA becomes increasingly tricky. Consequently, we decided to focus the project on scaling QAOA for the Max-Cut problem to as big graphs as possible using `distributed computing` and a `divide-and-conquer` approach [[5]](https://arxiv.org/pdf/2205.11762). To have consistent and comparable results to the literature, we focused on the Max-Cut of `3-regular` graphs where 2-layer QAOA is guaranteed to find a Max-Cut with a weight that is `>75%` of the optimal solution [[2]](https://arxiv.org/abs/2306.09198). During the 24 hours of "hacking," we had access to two NVIDIA A100 GPUs, allowing us to explore the scaling of the QAOA algorithm on large graphs.
 
-![3-Regular Graph](Other/3-Reg_graphs.png)
+![3-Regular Graph](3-Reg_graphs.png)
 
 The project was divided into the following steps:
 1. Implement a pipeline to generate random unweighted 3-regular graphs of increasing size and calculate their Max-Cut classically with `Gurobi`. 
